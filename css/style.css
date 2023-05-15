@@ -1,0 +1,156 @@
+:root {
+    --white: #ddd;
+    --blue: #263679;
+    --dark-blue: #071038;
+}
+
+* {
+    font-size: 62.5%;
+    font-family: "Ubuntu";
+}
+
+body {
+    font-size: 1.6rem;
+    color: var(--white);
+}
+
+.flex_wrapper {
+    background-image: url("../assets/bg-desktop.png");
+    background-position: center;
+    background-size: cover;
+    /* background-color: aqua; */
+    height: 100vh;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    gap: 2rem;
+
+}
+
+section {
+    padding: 2.5rem;
+    background-color: var(--blue);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+section#input {
+    padding-right: 10rem;
+
+    display: flex;    
+    gap: 2em;
+    justify-content: space-around;
+
+    border-radius: 10px 100px 10px 10px;
+}
+
+div#upload_buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+section#progress {
+    height: 20vh;
+    width: 40vw;
+
+    align-self: flex-end;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+div#progress_bar {
+    width: 100%;
+    height: 2em;
+    border-radius: 100px;
+    background-color: var(--dark-blue);
+
+    display: flex;
+    align-items: center;
+}
+
+div#current_progress {
+
+    width: 40%;
+    margin: 0 0.2rem;
+    height: 60%;
+    background-image: linear-gradient(90deg, rgba(238,167,158,1) 0%, rgba(244,94,180,1) 100%);
+    border-radius: 100px;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+/* span#circle {
+    width: 0.4rem;
+    height: 0.4rem;
+
+    border-radius: 100px;
+    margin-right: 0.2em;
+    background-color: #efefef;
+} */
+
+div#min_max {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+div#remaining_storage {
+    position: absolute;
+    left: 80%;
+    top: -20%;
+    /* transform: translate(-150%, 100%); */
+
+    width: 10rem;
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 10px;
+
+}
+
+div#remaining_storage p {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--dark-blue);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-weight: 300;
+}
+
+div#min_max p {
+    font-weight: 600;
+    color: #ccc;
+}
+
+
+button {
+    background-color: var(--dark-blue);
+
+    width: 3rem;
+    height: 3rem;
+
+    border: none;
+    border-radius: 10px;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: var(--white);
+    cursor: pointer;
+}
